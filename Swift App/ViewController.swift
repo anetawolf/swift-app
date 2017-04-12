@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBAction func buttonZelena(_ sender: Any) {
         self.view.backgroundColor = UIColor.green
         theLabel.textColor = UIColor.black
-        theLabel.text = "Zelena"
+        theLabel.text = "Zelena je zelena"
     }
     
     @IBAction func buttonModra(_ sender: Any) {
