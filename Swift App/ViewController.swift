@@ -12,6 +12,17 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theLabel: UILabel!
     
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
+
+    @IBAction func buttonVynasobit(_ sender: Any) {
+        theLabel.text = "\(Int(text1.text!)! + Int(text2.text!)!)"
+        
+        
+        print(text1.text!)
+        print(text2.text!)
+    }
+    
     @IBAction func buttonZelena(_ sender: Any) {
         self.view.backgroundColor = UIColor.green
         theLabel.textColor = UIColor.black
@@ -23,6 +34,7 @@ class ViewController: UIViewController {
         theLabel.textColor = UIColor.black
         theLabel.text = "Modra"
     }
+    
     
     @IBAction func buttonFialova(_ sender: Any) {
         self.view.backgroundColor = UIColor.purple
